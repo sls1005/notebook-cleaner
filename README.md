@@ -1,6 +1,6 @@
 # Notebook Cleaner
 
-**Notebook Cleaner** is a command line tool that removes additional information from a Jupyter notebook file.
+Notebook Cleaner is a command line tool that removes additional information from a Jupyter notebook file.
 
 ### Motivation
 
