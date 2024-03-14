@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: ASCII -*-
-# Notebook Cleaner 1.0
+# Notebook Cleaner 1.1
 # Python 3 is recommended for interpreting this, while Python 2 is also supported.
 import json
 from sys import version_info, stdout, stderr, argv
@@ -82,7 +82,7 @@ def main():
     for i in range(len(x['cells'])):
         x['cells'][i]['metadata'] = {}
 
-    for k in x['metadata'].copy().keys(): # used instead of `[*]` to ensure the compatibility with Python 2.
+    for k in list(x['metadata'].keys()):
         if k not in ('kernelspec', 'kernel_info', 'language_info'):
             x['metadata'].pop(k)
 
